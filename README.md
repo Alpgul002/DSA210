@@ -18,6 +18,8 @@ The project uses publicly available data representing the daily energy productio
 To strengthen the model, historical weather data for Istanbul in 2018 will be integrated. This data includes key variables such as sunlight duration, temperature, and other meteorological conditions, and can be accessed from the WeatherSpark website.
 https://tr.weatherspark.com/h/y/95434/2018/2018-y%C4%B1l%C4%B1-i%C3%A7in-%C4%B0stanbul-T%C3%BCrkiye-Tarihi-Hava-Durumu#Figures-Summary
 
+https://www.meteoblue.com/tr/hava/haritas%C4%B1/index#coords=7.85/40.44/29.15&map=uvIndex~daily~auto~sfc~none
+https://windy.app/tr/forecast2/spot/472239/T%C3%BCrkiye
 
 **Data Analysis Methods(Will be Considered):**
 
