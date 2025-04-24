@@ -21,7 +21,7 @@ https://tr.weatherspark.com/h/y/95434/2018/2018-y%C4%B1l%C4%B1-i%C3%A7in-%C4%B0s
 https://www.meteoblue.com/tr/hava/haritas%C4%B1/index#coords=7.85/40.44/29.15&map=uvIndex~daily~auto~sfc~none
 https://windy.app/tr/forecast2/spot/472239/T%C3%BCrkiye
 
-**Data Analysis Methods(Will be Considered):**
+**Data Analysis Methods:**
 
 Solar panels are affected by many factors, including dust accumulation, pollution, hours of sunshine, shading, and temperature. While pollution and shading can be mitigated manually, sunshine duration and temperature are natural phenomena. In addition to the production data we obtained, I used cloud-cover and temperature datasets corresponding to the coordinates of the solar power plant located in the İkitelli/Halkalı  in Istanbul. The production figures were provided as an Excel file by the Ulusal Akıllı Şehir Açık Veri Platformu and cover the period from 1 May 2018 to 31 May 2019, presented in kWh. However, data for July 2018, October 2018, and January 2019 are missing.
 
