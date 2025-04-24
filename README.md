@@ -35,6 +35,8 @@ To gather cloud-cover and temperature values, I first checked the WeatherSpark a
 
 For data exploration I continued that a line-style histogram (i.e., line plots over time) would be the best, because daily sunshine, temperature, and energy-production values all vary continuously. The script **histogramtraindata.py** creates graph that includes plots of all three variables—temperature, cloud-cover, and daily energy production (kWh). Anyone viewing the chart can immediately understand how the variables relate to one another.
 
+NOTE: Codes and excell files will be converted to jupiter notebook in next step.
+
 **Model Development(Will be Considered:)**
 
 Selection of appropriate forecasting models and machine learning models.
