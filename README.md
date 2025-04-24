@@ -38,6 +38,7 @@ For data exploration I continued that a line-style histogram (i.e., line plots o
 **NOTE: Codes and excell files will be converted to jupiter notebook in next step.**
 
 **Hypothesis Testing**
+
 **Cloud Cover (%) and Production (kWh)**: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
 Average daily output:
 • Low cloud cover(158days) (≤ 60 %) ≈ 5 000 kWh +
