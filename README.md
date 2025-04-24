@@ -23,7 +23,17 @@ https://windy.app/tr/forecast2/spot/472239/T%C3%BCrkiye
 
 **Data Analysis Methods(Will be Considered):**
 
-Cleaning and merging the two datasets (energy production and weather data). Analysis of the correlation between sunlight duration and energy production.
+Solar panels are affected by many factors, including dust accumulation, pollution, hours of sunshine, shading, and temperature. While pollution and shading can be mitigated manually, sunshine duration and temperature are natural phenomena. In addition to the production data we obtained, I used cloud-cover and temperature datasets corresponding to the coordinates of the solar power plant located in the İkitelli/Halkalı  in Istanbul. The production figures were provided as an Excel file by the Ulusal Akıllı Şehir Açık Veri Platformu and cover the period from 1 May 2018 to 31 May 2019, presented in kWh. However, data for July 2018, October 2018, and January 2019 are missing.
+
+To gather cloud-cover and temperature values, I first checked the WeatherSpark and MeteoBlue websites. However they require premium subscriptions and it was unclear whether I could download the data in the exact format I needed, I continued searching. Eventually, I found that the Open-Meteo website archives both cloud-cover and temperature data for Istanbul. After locating their API documentation, the remaining tasks were coding and exporting the results to Excel. Throughout the coding process I relied heavily on the pandas and matplotlib libraries.
+
+üretimdailymean.py converts the raw Excel file from the plant operator—recorded at 15-minute intervals in daily production to daily total production in kWh.
+
+download_istanbul_weather.py retrieves temperature and cloud-cover data for the plant’s latitude and longitude and saves them to Excel.
+
+birlestirilmisfinaldata.py combines the two Excel tables into a cleaner dataset, producing train_data.xlsx. This dataset makes manipulation by machine-learning models much easier.
+
+For data exploration I continued that a line-style histogram (i.e., line plots over time) would be the best, because daily sunshine, temperature, and energy-production values all vary continuously. The script histogramtraindata.py creates graph that includes plots of all three variables—temperature, cloud-cover, and daily energy production (kWh). Anyone viewing the chart can immediately understand how the variables relate to one another.
 
 **Model Development(Will be Considered:)**
 
