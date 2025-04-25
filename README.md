@@ -27,18 +27,18 @@ Solar panels are affected by many factors, including dust accumulation, pollutio
 
 To gather cloud-cover and temperature values, I first checked the WeatherSpark and MeteoBlue websites. However they require premium subscriptions and it was unclear whether I could download the data in the exact format I needed, I continued searching. Eventually, I found that the Open-Meteo website archives both cloud-cover and temperature data for Istanbul. After locating their API documentation, the remaining tasks were coding and exporting the results to Excel. Throughout the coding process I relied heavily on the pandas and matplotlib libraries.
 
-**FOLDER production **
+**FOLDER production**
 
 
 **üretimdailymean.py** converts the raw Excel file from the plant operator—recorded at 15-minute intervals in daily production to daily total production in kWh.**(ikitelli_daily_energy.xlsx)**
 
 
-**FOLDER dailyweather **
+**FOLDER dailyweather**
 
 
 **download_istanbul_weather.py** retrieves temperature and cloud-cover data for the plant’s latitude and longitude and saves them to Excel.**(daily_weather_2018-05_2019-05.xlsx)**
 
-**FOLDER finaldata **
+**FOLDER finaldata**
 
 
 **birlestirilmisfinaldata.py** combines the two Excel tables into a cleaner dataset, producing train_data.xlsx. This dataset makes manipulation by machine-learning models much easier.**(train_data.xlsx)**
@@ -49,7 +49,7 @@ For data exploration I continued that a line-style histogram (i.e., line plots o
 
 **Hypothesis Testing**
 
-**Cloud Cover and Production **: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
+**Cloud Cover and Production**: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
 Average daily output:
 • Low cloud cover(158days) (≤ 60 %) = 5 000 kWh +
 • High cloud cover(145 days) (> 60 %) = 3 000 kWh +
