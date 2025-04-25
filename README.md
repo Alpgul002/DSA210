@@ -28,12 +28,19 @@ Solar panels are affected by many factors, including dust accumulation, pollutio
 To gather cloud-cover and temperature values, I first checked the WeatherSpark and MeteoBlue websites. However they require premium subscriptions and it was unclear whether I could download the data in the exact format I needed, I continued searching. Eventually, I found that the Open-Meteo website archives both cloud-cover and temperature data for Istanbul. After locating their API documentation, the remaining tasks were coding and exporting the results to Excel. Throughout the coding process I relied heavily on the pandas and matplotlib libraries.
 
 **FOLDER production **
+
+
 **üretimdailymean.py** converts the raw Excel file from the plant operator—recorded at 15-minute intervals in daily production to daily total production in kWh.**(ikitelli_daily_energy.xlsx)**
 
+
 **FOLDER dailyweather **
+
+
 **download_istanbul_weather.py** retrieves temperature and cloud-cover data for the plant’s latitude and longitude and saves them to Excel.**(daily_weather_2018-05_2019-05.xlsx)**
 
 **FOLDER finaldata **
+
+
 **birlestirilmisfinaldata.py** combines the two Excel tables into a cleaner dataset, producing train_data.xlsx. This dataset makes manipulation by machine-learning models much easier.**(train_data.xlsx)**
 
 For data exploration I continued that a line-style histogram (i.e., line plots over time) would be the best, because daily sunshine, temperature, and energy-production values all vary continuously. The script **histogramtraindata.py** creates graph that includes plots of all three variables—temperature, cloud-cover, and daily energy production (kWh). Anyone viewing the chart can immediately understand how the variables relate to one another.
