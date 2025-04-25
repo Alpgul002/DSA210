@@ -39,23 +39,23 @@ For data exploration I continued that a line-style histogram (i.e., line plots o
 
 **Hypothesis Testing**
 
-**Cloud Cover (%) and Production (kWh)**: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
+**Cloud Cover and Production **: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
 Average daily output:
-• Low cloud cover(158days) (≤ 60 %) ≈ 5 000 kWh +
-• High cloud cover(145 days) (> 60 %) ≈ 3 000 kWh +
+• Low cloud cover(158days) (≤ 60 %) = 5 000 kWh +
+• High cloud cover(145 days) (> 60 %) = 3 000 kWh +
 
- t-test comparing the two groups: p ≈ 1 × 10⁻¹⁰
- Mean difference ≈ 2 500 kWh
+ t-test comparing the two groups: p = 1 × 10⁻¹⁰
+ Mean difference = 2 500 kWh
  cloud cover has a very large, significant impact.
 
-**Temperature (°C) ↔ Production (kWh)**
+**Temperature and Production **
 The red temperature curve ranges mostly between 15 °C and 30 °C. Production rises modestly with temperature, but the link is far weaker than for cloud cover.
-Using the median temperature (~22 °C) as a split:
-• Cool days average(152 days) ≈ 4 400 kWh
-• Warm days average(151 days) ≈ 4 900 kWh
+Using the median temperature (22 °C) as a split:
+• Cool days average(152 days) = 4 400 kWh
+• Warm days average(151 days) = 4 900 kWh
 
 t-test comparing the two groups: p = 0.02
-Mean difference ≈ 500 kWh
+Mean difference = 500 kWh
 Temperature has a smaller effect but still has an impact.
 
 **Model Development(Will be Considered:)**
