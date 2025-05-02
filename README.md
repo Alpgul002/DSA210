@@ -43,7 +43,7 @@ To gather cloud-cover and temperature values, I first checked the WeatherSpark a
 
 **birlestirilmisfinaldata.ipynb** combines the two Excel tables into a cleaner dataset, producing train_data.xlsx. This dataset makes manipulation by machine-learning models much easier. Note that in ipynb  format (jupiter notebook) the excell data are shown seperated but in real excel file there are 4 columns showing, date, temperature, cloud cover and production value at same row.**(train_data.xlsx)**
 
-For data exploration I continued that a line-style histogram (i.e., line plots over time) would be the best, because daily sunshine, temperature, and energy-production values all vary continuously. The script **histogramtraindata.ipynb** creates graph that includes plots of all three variables—temperature, cloud-cover, and daily energy production (kWh). Anyone viewing the chart can immediately understand how the variables relate to one another.
+For data exploration I continued that a line-style graph (i.e., line plots over time) would be the best, because daily sunshine, temperature, and energy-production values all vary continuously. The script **histogramtraindata.ipynb** creates graph that includes plots of all three variables—temperature, cloud-cover, and daily energy production (kWh). Anyone viewing the chart can immediately understand how the variables relate to one another.
 
 **NOTE: Codes and excell files will be converted to jupiter notebook in next step.**
 
