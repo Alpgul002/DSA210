@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3a8c3f7a-d66d-4fd6-ae09-9f7347a2fe62)**#Forecasting Daily Solar Panel Energy Production in İkitelli Using Weather Data**
+**#Forecasting Daily Solar Panel Energy Production in İkitelli Using Weather Data**
 
 
 In the modern energy sector, efficient operations and strategic decision-making are crucial. This project aims to develop a forecasting model that predicts daily solar panel energy production based on sunlight duration and associated weather conditions. The objective is to support energy trading decisions by providing accurate short-term predictions.
@@ -47,6 +47,24 @@ For data exploration I continued that a line-style graph (i.e., line plots over 
 
 **NOTE: Codes and excell files will be converted to jupiter notebook in next step.**
 
+
+
+![image](https://github.com/user-attachments/assets/444f394f-85a7-48a2-844c-a9d059a42425)
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/1037a5f6-20d4-4ad5-8703-0e285a87900c)
+
+
+
+
+![image](https://github.com/user-attachments/assets/fbc49824-aab4-48b7-9a43-9f367b3dfbeb)
+
+
 **Hypothesis Testing**
 
 **Cloud Cover and Production**: Whenever the orange production curve drops sharply, the blue cloud-cover curve spikes above 60 %. 
@@ -73,6 +91,11 @@ Temperature has a smaller effect but still has an impact.
 Our machine learning pipeline begins by extracting two key features—daily cloud cover percentage and the calendar month—to capture weather variability and seasonal patterns, then splits the data chronologically (80 % train, 20 % test) to avoid peeking into future values. We scale these inputs and fit a Support Vector Regression model with an RBF kernel, tuning its regularization (C), tolerance (ε), and kernel width (γ) so it can learn the non-linear relationship between cloudiness, seasonality, and solar output without overfitting. Finally, we validate on hold-out data using RMSE and MAE metrics, showing that our SVR model reliably predicts daily energy production by balancing sensitivity to weather fluctuations with generalization across different times of year.
 
 ![image](https://github.com/user-attachments/assets/59c9cc11-9174-4208-94d4-8a52f2229a65)
+
+
+
+![image](https://github.com/user-attachments/assets/7788391f-74b3-4437-b638-9d99bc45511c)
+
 
 **This project aims to predict relation between weather conditions and solar panel energy production. The success of this project will contribute to more efficient energy trading and improved operational planning for solar panel energy industry.**
 
