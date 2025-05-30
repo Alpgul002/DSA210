@@ -1,4 +1,4 @@
-**#Forecasting Daily Solar Panel Energy Production in İkitelli Using Weather Data**
+![image](https://github.com/user-attachments/assets/3a8c3f7a-d66d-4fd6-ae09-9f7347a2fe62)**#Forecasting Daily Solar Panel Energy Production in İkitelli Using Weather Data**
 
 
 In the modern energy sector, efficient operations and strategic decision-making are crucial. This project aims to develop a forecasting model that predicts daily solar panel energy production based on sunlight duration and associated weather conditions. The objective is to support energy trading decisions by providing accurate short-term predictions.
@@ -72,6 +72,7 @@ Temperature has a smaller effect but still has an impact.
 
 Selection of appropriate forecasting models and machine learning models.
 
+![image](https://github.com/user-attachments/assets/59c9cc11-9174-4208-94d4-8a52f2229a65)
 
 **This project aims to predict relation between weather conditions and solar panel energy production. The success of this project will contribute to more efficient energy trading and improved operational planning for solar panel energy industry.**
 
