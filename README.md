@@ -90,9 +90,6 @@ Temperature has a smaller effect but still has an impact.
 
 Our machine learning pipeline begins by extracting two key features—daily cloud cover percentage and the calendar month—to capture weather variability and seasonal patterns, then splits the data chronologically (80 % train, 20 % test) to avoid peeking into future values. We scale these inputs and fit a Support Vector Regression model with an RBF kernel, tuning its regularization (C), tolerance (ε), and kernel width (γ) so it can learn the non-linear relationship between cloudiness, seasonality, and solar output without overfitting. Finally, we validate on hold-out data using RMSE and MAE metrics, showing that our SVR model reliably predicts daily energy production by balancing sensitivity to weather fluctuations with generalization across different times of year.
 
-![image](https://github.com/user-attachments/assets/59c9cc11-9174-4208-94d4-8a52f2229a65)
-
-
 
 ![image](https://github.com/user-attachments/assets/7788391f-74b3-4437-b638-9d99bc45511c)
 
